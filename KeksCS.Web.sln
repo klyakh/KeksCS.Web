@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "klyakh.Web", "klyakh.Web\klyakh.Web.csproj", "{4A320EB1-7758-4957-ADA0-AD3EF16248B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeksCS.Web", "KeksCS.Web\KeksCS.Web.csproj", "{4A320EB1-7758-4957-ADA0-AD3EF16248B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
