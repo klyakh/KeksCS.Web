@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("KeksCS.Web")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("ASP.NET web utilities.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Keks Custom Solutions")]
 [assembly: AssemblyProduct("KeksCS.Web")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
