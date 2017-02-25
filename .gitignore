@@ -1,3 +1,5 @@
 .vs/
 KeksCS.Web/bin/
 KeksCS.Web/obj/
+KeksCS.Web.Tests/bin/
+KeksCS.Web.Tests/obj/

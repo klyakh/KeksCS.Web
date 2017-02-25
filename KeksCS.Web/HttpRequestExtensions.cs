@@ -35,8 +35,8 @@ namespace KeksCS.Web
 					//проверяем кажду часть начиная слева
 					foreach(var subValue in subValues)
 					{
-						string ipToParse = subValue.Trim();
-						if(ipToParse.Length > 0 && ipToParse != "unknown")
+						string ipToParse = GetIPFromHeaderValue(subValue);
+						if(ipToParse != null)
 						{
 							//как только находим какой-то IP, пытаемся распарсить.
 							IPAddress ip = null;
@@ -74,6 +74,26 @@ namespace KeksCS.Web
 			{
 				return userHostAddress;
 			}
+		}
+
+		/// <summary>
+		/// This method is public so I can quickly unit test it. Find right approach later.
+		/// </summary>
+		/// <param name="headerValue"></param>
+		/// <returns></returns>
+		public static string GetIPFromHeaderValue(string headerValue)
+		{
+			if(headerValue == "unknown")
+			{
+				return null;
+			}
+
+			string result = headerValue.Trim();
+
+			//remove port if included
+			result = result.Split(':')[0];
+
+			return result.Length > 0 ? result : null;
 		}
 	}
 }
